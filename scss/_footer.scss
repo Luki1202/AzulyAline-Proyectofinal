@@ -1,0 +1,130 @@
+#footer{
+    width: 95%;
+    height: 100%;
+    padding: 0.625em 1.875em;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-area: footer;
+    align-items: center;
+    justify-self: center;
+    font-size: 16px;
+    ul{
+        padding: 0px;
+        li{
+            text-decoration: none;
+            color: white;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+#footer{
+    p{
+        text-align: center;
+    }
+}
+
+.footerBox{
+    width: 95%;
+    height: 100%;
+    padding: 0.625em 1.875em;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-area: footer;
+    justify-self: center;
+}
+
+.logo_footer{
+    a{
+        img{
+            display: block;
+            width: 25%;
+            margin: auto;
+            margin-top: 0.625em;
+            border-radius: 50%;
+        }
+    }
+}
+
+.menu_footer{
+    height: 100%;
+    p{
+        text-align: center;
+        ul{
+            li{
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.payments{
+    height: 100%;
+}
+
+
+
+.social{
+    height: 100%;
+    ul{
+        li{
+            list-style: none;
+        }
+    }
+}
+
+.info{
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: #212529;
+    }
+}
+.info{
+    a:hover{
+        color: rgba(0,0,0,.7);
+    }
+}
+
+/*MEDIA QUERIS*/
+/* Tablets (768px) */
+@media (max-width: 768px){
+    .footerBox{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-area: footer;
+        align-items: center;
+        justify-self: center;
+        ul{
+            li{
+                display: grid;
+                justify-content: center;
+                line-height: 35px;
+            }
+        }
+    }
+}
+/* Phones (576px) */
+@media (max-width: 576px){
+    .footerBox{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-area: footer;
+        align-items: center;
+        justify-self: center;
+        ul{
+            li{
+                display: grid;
+                justify-content: center;
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+

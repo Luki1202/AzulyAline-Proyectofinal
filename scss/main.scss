@@ -1,0 +1,16 @@
+@import "_variables";
+@import "_navBar";
+@import "_content";
+@import "_footer";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    background-color: map-get($colorFondos, fondo1);
+}
+

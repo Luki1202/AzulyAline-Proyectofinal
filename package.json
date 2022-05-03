@@ -1,0 +1,25 @@
+{
+  "name": "azul-aline-garcialucasbootstrap",
+  "version": "1.0.0",
+  "description": "Se agrega sass al proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/styles.css",
+		"watch-css": "nodemon -e scss -x \"npm     run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/full-luki/Azul-Aline-GarciaLucasBootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/full-luki/Azul-Aline-GarciaLucasBootstrap/issues"
+  },
+  "homepage": "https://github.com/full-luki/Azul-Aline-GarciaLucasBootstrap#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,65 @@
+
+.navbar-collapse{
+  flex-grow: 0;
+}
+
+.navbar-toggler{
+  padding: 0;
+}
+
+.bg-navbar{
+    background-color: rgba(236, 187, 122, .6);
+}
+
+.logo{
+  width: auto;
+  .logoNavBar:hover{
+    animation-name: rotate-logo;
+    animation-duration: 2s;
+  }
+}
+
+@keyframes rotate-logo{
+    from{
+      transform: rotateZ(0deg);
+    }
+    to{
+      transform: rotateZ(360deg); 
+    }
+  }
+
+@media (max-width: 991px){
+  .logoNavBar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
+}
+
+@media (max-width: 576px){
+    .footerBox{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-area: footer;
+        align-items: center;
+        justify-self: center;
+        ul{
+            li{
+                display: grid;
+                justify-content: center;
+                line-height: 35px;
+            }
+        }
+    }
+}
+  
+@media (max-width: 440px){
+  .container-fluid{
+    display: flex;
+    flex-wrap: initial !important;
+    align-items: center;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+}
